@@ -1,0 +1,23 @@
+{
+	"changeType": "codeExt",
+	"reference": "customer.ztransfertstock",
+	"namespace": "apps/customer.ztransfertstock/changes/",
+	"projectId": "customer.ztransfertstock",
+	"moduleName": "customer/ztransfertstock/changes/coding/zTransfertStockExt",
+	"support": {
+		"generator": "rta.service.ControllerExtension",
+		"sapui5Version": "1.108.22"
+	},
+	"originalLanguage": "DE",
+	"layer": "CUSTOMER_BASE",
+	"fileType": "change",
+	"fileName": "id_1724412620507_122_codeExt",
+	"content": {
+		"codeRef": "coding/zTransfertStockExt.js"
+	},
+	"texts": {},
+	"selector": {
+		"controllerName": "ui.s2p.mm.transfer.stock.crossplant.controller.S1"
+	},
+	"creation": "2024-08-23T11:30:20.611Z"
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Adaptation Project Preview</title>
+
+	<style>
+		/* hide variant management popover footer */
+		.sapUiFlVarMngmtPopover .sapMPageWithFooter>section { bottom: 0 !important; }
+		.sapUiFlVarMngmtPopover .sapMPageFooter, .sapUICompVarMngmtPopover .sapMPageFooter { display: none !important; }
+	</style>
+	
+	<script type="text/javascript">
+		window["sap-ushell-config"] = {
+			defaultRenderer : "fiori2",
+			renderers: {
+				fiori2: {
+					componentData: {
+						config: {
+							appState: "headerless",
+							rootIntent: "adaptationproject-display"
+						}
+					}
+				}
+			},
+			applications: {
+				"adaptationproject-display": {
+					title: "Adaptation Project Preview",
+					additionalInformation: "SAPUI5.Component=ui.s2p.mm.transfer.stock.crossplant",
+					applicationType: "URL",
+					applicationDependencies: {"name":"ui.s2p.mm.transfer.stock.crossplant","url":"/sap/bc/ui5_ui5/sap/crosstransfers1/~4BFD17643E23D7EEDFA55C5E1890E289~5","manifest":{"_version":"1.11.0","sap.app":{"_version":"1.2.0","id":"customer.ztransfertstock","type":"application","resources":"resources.json","i18n":"i18n/i18n.properties","title":"HFB - Transfer stock cross plant","description":"Bestand umbuchen - werksübergreifend","applicationVersion":{"version":"0.1.0"},"ach":"MM-FIO-IM-SGM","dataSources":{"MMIM_MATERIAL_DATA_SRV":{"uri":"/sap/opu/odata/sap/MMIM_MATERIAL_DATA_SRV/","type":"OData","settings":{"odataVersion":"2.0","localUri":"localService/metadata.xml","annotations":["annotation0"]}},"MMIM_MATDOC_SRV":{"uri":"/sap/opu/odata/sap/MMIM_MATDOC_SRV/","type":"OData","settings":{"odataVersion":"2.0","localUri":"localService/metadata1.xml"}},"MMIM_STO_SRV":{"uri":"/sap/opu/odata/sap/MMIM_STO_SRV/","type":"OData","settings":{"odataVersion":"2.0","localUri":"localService/metadata2.xml"}},"annotation0":{"uri":"annotations/annotation0.xml","type":"ODataAnnotation","settings":{"localUri":"annotations/annotation0.xml"}}},"sourceTemplate":{"id":"sap.ui.ui5-template-plugin.1worklist","version":"1.0.0"}},"sap.fiori":{"_version":"1.1.0","registrationIds":["F1957"],"archeType":"transactional"},"sap.ui":{"_version":"1.2.0","technology":"UI5","icons":{"icon":"sap-icon://task","favIcon":"","phone":"","phone@2":"","tablet":"","tablet@2":""},"deviceTypes":{"desktop":true,"tablet":true,"phone":true},"supportedThemes":["sap_hcb","sap_bluecrystal"]},"sap.ui5":{"_version":"1.1.0","flexEnabled":true,"rootView":{"viewName":"ui.s2p.mm.transfer.stock.crossplant.view.App","type":"XML","id":"app"},"config":{"fullWidth":true,"sapFiori2Adaptation":true},"commands":{"Share":{"shortcut":"Shift+Ctrl+S"}},"dependencies":{"minUI5Version":"1.108.25","libs":{"sap.ui.core":{"minVersion":"1.34.0"},"sap.ui.comp":{"minVersion":"1.34.0","lazy":false},"sap.ui.generic.app":{"minVersion":"1.34.0","lazy":false},"sap.ui.layout":{"minVersion":"1.34.0","lazy":false},"sap.suite.ui.commons":{"minVersion":"1.34.0","lazy":false},"sap.ushell":{"minVersion":"1.30","lazy":false},"sap.m":{"minVersion":"1.34.0"},"ui.s2p.mm.im.lib.materialmaster":{"minVersion":"10.4.0","lazy":true},"sap.uxap":{"lazy":false},"sap.suite.ui.microchart":{"minVersion":"","lazy":false}},"components":{"sap.se.mi.plm.lib.attachmentservice.attachment":{"lazy":true}}},"componentUsages":{"attachmentReuseComponent":{"name":"sap.se.mi.plm.lib.attachmentservice.attachment","settings":{}}},"contentDensities":{"compact":true,"cozy":true},"models":{"i18n":{"type":"sap.ui.model.resource.ResourceModel","settings":{"bundleName":"ui.s2p.mm.transfer.stock.crossplant.i18n.i18n","enhanceWith":[{"bundleUrl":"/webapp/i18n/i18n.properties","supportedLocales":[""],"fallbackLocale":"","bundleUrlRelativeTo":"manifest"}]}},"oMaterialData":{"dataSource":"MMIM_MATERIAL_DATA_SRV","preload":true,"settings":{"metadataUrlParams":{"sap-documentation":"heading"}}},"oMatDoc":{"dataSource":"MMIM_MATDOC_SRV","preload":true,"settings":{"metadataUrlParams":{"sap-documentation":"heading"}}},"oSTO":{"dataSource":"MMIM_STO_SRV","preload":true,"settings":{"metadataUrlParams":{"sap-documentation":"heading"}}}},"routing":{"config":{"routerClass":"sap.m.routing.Router","viewType":"XML","viewPath":"ui.s2p.mm.transfer.stock.crossplant.view","controlId":"app","controlAggregation":"pages","bypassed":{"target":"notFound"},"async":true},"routes":[{"pattern":":all*:","name":"S1","target":"S1"}],"targets":{"S1":{"viewName":"S1","viewId":"S1","viewLevel":1},"objectNotFound":{"viewName":"ObjectNotFound","viewId":"objectNotFound"},"notFound":{"viewName":"NotFound","viewId":"notFound"}}},"componentName":"ui.s2p.mm.transfer.stock.crossplant","appVariantId":"customer.ztransfertstock","appVariantIdHierarchy":[{"appVariantId":"ui.s2p.mm.transfer.stock.crossplant.Component","layer":"VENDOR","version":"10.0.4"}]},"sap.platform.abap":{"_version":"1.1.0","uri":"/sap/bc/ui5_ui5/sap/crosstransfers1"}},"self":{"name":"ui.s2p.mm.transfer.stock.crossplant","url":"/sap/bc/ui5_ui5/sap/crosstransfers1/~4BFD17643E23D7EEDFA55C5E1890E289~5"},"asyncHints":{"libs":[{"name":"sap.suite.ui.generic.template","lazy":true},{"name":"sap.se.mi.plm.lib.attachmentservice","url":{"url":"/sap/bc/ui5_ui5/sap/plm_ath_cres1/~34BC673DF3A9FAF46D80005EB0F70F4F~5","final":true},"lazy":true},{"name":"sap.suite.ui.commons"},{"name":"sap.s4h.cfnd.featuretoggle","url":{"url":"/sap/bc/ui5_ui5/sap/featuretoggles1/~D6EF272404573B5B10C290A1595E5E5B~5","final":true},"lazy":true},{"name":"sap.m"},{"name":"sap.ui.core"},{"name":"sap.ui.comp"},{"name":"sap.ui.layout"},{"name":"sap.uxap"},{"name":"sap.ushell"},{"name":"sap.collaboration","lazy":true},{"name":"sap.ui.table","lazy":true},{"name":"sap.suite.ui.microchart"},{"name":"ui.s2p.mm.im.lib.materialmaster","url":{"url":"/sap/bc/ui5_ui5/sap/mmimreusemats1/~3ACC59BC6E16C88A54721F710305849E~5","final":true},"lazy":true},{"name":"sap.ui.commons","lazy":true},{"name":"sap.ui.generic.app"}],"components":[{"name":"customer.ztransfertstock","url":{"url":"/webapp","final":true},"lazy":true}],"requests":[{"name":"sap.ui.fl.changes","reference":"customer.ztransfertstock","preview":{"maxLayer":"PARTNER","reference":"ui.s2p.mm.transfer.stock.crossplant.Component"}}]},"altManifestUrl":"webapp/manifest.appdescr_variant","componentData":{"startupParameters":{"sap-ui-fl-max-layer":["CUSTOMER_BASE"]}}}
+				}
+			}
+		};
+	</script>
+
+	<script src="https://sapui5.hana.ondemand.com/1.108.25/test-resources/sap/ushell/bootstrap/sandbox.js" id="sap-ushell-bootstrap"></script>
+
+	<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/1.108.25/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.ushell, sap.ui.rta"
+			data-sap-ui-theme="sap_horizon"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-xx-bindingSyntax="complex"
+			data-sap-ui-xx-rootComponentNode="content"
+			data-sap-ui-xx-designMode="true"
+			data-sap-ui-flexibilityServices='[{"connector": "LrepConnector", "layers": [], "url": "/sap/bc/lrep"}, {"applyConnector": "PreviewConnector", "custom": true, "layers": ["CUSTOMER_BASE"]}]'
+			data-sap-ui-xx-suppressDeactivationOfControllerCode="true">
+	</script>
+
+	<script type="text/javascript">
+		sap.ui.getCore().attachInit(function() {
+			sap.ushell.Container.createRenderer().placeAt("content");
+		});
+	</script>
+
+	<script>var aFlexChanges = [{"changeType":"codeExt","reference":"customer.ztransfertstock","namespace":"apps/customer.ztransfertstock/changes/","projectId":"customer.ztransfertstock","moduleName":"customer/ztransfertstock/changes/coding/zTransfertStockExt","support":{"generator":"rta.service.ControllerExtension","sapui5Version":"1.108.22"},"originalLanguage":"DE","layer":"CUSTOMER_BASE","fileType":"change","fileName":"id_1724412620507_122_codeExt","content":{"codeRef":"coding/zTransfertStockExt.js"},"texts":{},"selector":{"controllerName":"ui.s2p.mm.transfer.stock.crossplant.controller.S1"},"creation":"2024-08-23T11:30:20.611Z"}]</script>
+	<script src= https://port8888-workspaces-ws-lblmg.eu20.applicationstudio.cloud.sap/features/SAP.adp-ve-bas-ext/1.0.96/sap.watt.saptoolsets.fiori.project.uiadaptationfeature/client/v1.0.96_1721051440683/src/adaptationproject/util/LoadChangesLrepPreview.js ></script>
+	<script src= https://port8888-workspaces-ws-lblmg.eu20.applicationstudio.cloud.sap/features/SAP.adp-ve-bas-ext/1.0.96/sap.watt.saptoolsets.fiori.project.uiadaptationfeature/client/v1.0.96_1721051440683/src/uiadaptation/util/AppVariantPreviewHelper.js ></script>
+
+</head>
+
+<body class="sapUiBody" id="content" role="application">
+</body>
+
+</html>
